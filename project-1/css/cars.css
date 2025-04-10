@@ -1,0 +1,29 @@
+main img {
+    width: 600px;
+    height: 400px;
+    padding: 20px 150px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.vehicule-info {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.button {
+    background-color: #f0c040;
+    color:black;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-decoration: none;
+ }
+ 
+ .button:hover {
+     background-color:  #333;
+     color:white;
+   }

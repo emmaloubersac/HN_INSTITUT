@@ -1,0 +1,21 @@
+button {
+    background-color: #f0c040;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    
+ }
+ 
+ button:hover {
+     background-color:  #333;
+     color:white;
+   }
+
+.reservation form {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 40px;
+        
+}

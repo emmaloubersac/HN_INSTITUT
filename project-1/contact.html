@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="css/contact.css" />
+  <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+</head>
+<body>
+  <div class="container">
+  <header>
+    <nav>
+      <div class="logo"><img alt="logo" src="images/car_logo.png" class="logoImg"/>DC Location</div>
+      <div class="menu">
+        <a href="home.html">Accueil</a>
+        <div class="dropdown">
+          <a href="#">Nos Offres</a>
+          <div class="dropdown-content">
+            <a href="prices.html">Nos Tarifs</a>
+            <a href="cars.html">Nos Véhicules</a>
+            <a href="location.html">Nos Agences</a>
+          </div>
+        </div>
+        <a href="reservation.html">Réservation</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Nous contacter</h1>
+    <p>Complétez les informations ci-dessous et envoyez-nous vos questions!</p>
+    <div class="formInfo">
+    <form action="https://hnitest.go.yj.fr" method="POST">
+        <div class="userInfo">
+          Nom <br /> <input type="text" id="lastName" name="lastName" required><br /><br />
+          Prénom <br /> <input type="text" id="firstName" name="firstName" required><br /><br />
+          Email  <br /><input type="mail" id="mail" name="mail" required><br /><br />
+          Pays <select name="country" id="country" required>
+            <option>Belgique</option>
+            <option>Espagne </option> 
+            <option>France</option>
+            <option>Italie</option>
+            <option>Portugal</option>
+            <option>Autres</option>
+          </select><br /><br />
+          Ville <br /> <input id="city" name="city" required></input><br /><br />
+        </div>
+        <div class="messageInfo">
+          <textarea id="request" name="request" required placeholder="Écris ton message ici..."></textarea><br /><br />
+        <div class="messageInfo"></div>
+
+      <button type="submit">Envoyer</button>
+    </form>
+    </div>
+    <br />
+    <hr />
+    <div class="contact">
+      <p>DC Location, Siège Social - 32, rue du Javelot - 75013 PARIS, &copy; 2016</p>
+    </div>
+  </main>
+</div>
+</body>
+</html>
