@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <style>
+
+    h1 {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .container {
+      text-align: center;
+      padding: 5px 100px;
+      border: 4px solid blue;
+      margin: 5px 500px;
+    }
+    
+    .menuBloc {
+	text-decoration: underline;
+	justify-content: center;
+	display: flex;
+    }
+    
+    .bloc {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      align-text: left;
+    }
+    
+    .news {
+    	padding: 40px;
+    	text-align: left;
+    }
+
+    .announcements {
+      padding: 40px;
+      border-left: 4px solid blue;
+      text-align: left;
+    }
+
+    ul {
+       list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	text-align:center;
+	}
+    li {
+	float:left;
+	}
+    a:link,a:visited {
+		font-size:17px;
+		color:#000000;	
+		text-align:center;
+		padding:6px;
+    }
+    a:hover,a:active {
+	background-color:blue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Home Page</h1>
+
+  <div class="container">
+    <h2 text-align="center" display=flex> <img alt="html image example" src="img/Logo_Sorbonne_Université.png" width="240" height="75" />- Sorbonne University</h2>
+    <div class="menuBloc">
+      <ul>
+	<li><a href="#">Presentation</a></li>
+	<li><a href="#">Studies</a></li>
+	<li><a href="#">Staff</a></li>
+      </ul>
+    </div>
+
+    <div class="bloc">
+      <div class="news">
+        <h2>News</h2>
+        <p>News1 - Date <br /> Description </p>
+        <p>News2 - Date <br /> Description </p>
+      </div>
+      <div class="announcements">
+        <h2>Announcements</h2>
+        <p>Open course 1 <br /> Description </p>
+        <p>Open course 2 <br /> Description </p>
+      </div>
+    </div>
+    <p align=center> Contact: <a href="mailto:info@university.com?subject=Questions&body=Write here if you have questions" title="" >info@university.com</a>&copy; University, 2011</p>
+  </div>
+  
+  
+
+</body>
+</html>
+

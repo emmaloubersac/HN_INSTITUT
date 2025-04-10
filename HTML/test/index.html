@@ -1,0 +1,210 @@
+<html>
+	<head>
+		<title> HTML test exercise! </title>
+		<!--to include css style from an external file, méthode la plus utilisé car plus lisible-->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<!--possibilité d'écrire direct le css dans le head du file, dernière opt dans le body-->
+		<style type="text/css">
+			body { background-color: #efefef; }
+			hr { color: #efefef; }
+			p { margin-left:15px; }
+			overlap_element {
+			      position:relative;
+			      top:-20px;
+			   }
+
+		</style>
+	</head>
+	
+	<body>
+		<!--retour à la ligne, tag spécial car s'ouvre et se ferme en même tmps-->
+		<br />
+		
+		<!--définition du style css direct dans le tag ou el-->
+		<p style="text-align:right; color:green; font-family: 'times new roman'; margin-left:15px;">This is just a simple, inline formatted paragraph.</p>
+		
+		Tags tests : 
+		
+		<!--créer un paragraphe-->
+		<p>paragraph</p>
+		
+		<!--créer un titre taille 2 sur 6-->
+		<h2>Title (heading)</h2> <br />
+		
+		<!--écrire en italique-->
+		<i>italic</i> <br />
+		
+		<b>bold</b> <br />
+		
+		<!--barre pour rentrer des valeurs : 
+			type : type de valeur
+			maxlength : nb max de charactère
+			size : taille de la barre
+		-->
+		<input type="text" maxlength="40" size="12" /> -- Input Field -- <br />
+		
+		<!--ajout d'un attribut pour centrer l'input de text-->
+		<h2 align="center"> <input type="text" name="TextField"/> </h2> <br />
+		
+		<!--ajouter un pop-up au titre (montre le titre quand on passe la souris dessus)-->
+		<h2 class="green" title="I am a title attribute!!">A random title</h2>
+		
+		<!--aligner un paragraphe à droite grâce à un attribut-->
+		<p id="blue" align="right">The paragraph is a base element in text editing. The paragraph<br />is a base element in text editing. The tag for a paragraph is &lt;p&gt;.<br />This one places a empty line above and under the text to make it evident, and the browser will take it as it is.</p>
+		
+		<!-- Création de listes, 3 types : 
+		   	<ul> - unsorted list, bullets
+    			<ol> - ordered list, numbers
+    			<dl> - definition list. 
+    		-->
+    		
+    		<!--Mettre <li> dvt chaque el de la liste pour sorted & unsorted list (ul ou ol). Si start non spécifié, commence à 1, sinon pas start.
+    		Possibilité de changer le type pour l'énumération avec : 
+    			<ol type="a"> (a. b. c. ...)
+			<ol type="A"> (A. B. C. ...)
+			<ol type="i"> (i. ii. iii. ...)
+			<ol type="I"> -->
+    		<ol start="4" >
+			<li>To find a job </li>
+			<li>To take a lots of money </li>
+			<li>To move in an other city</li>
+		</ol>
+		
+		<ol style="list-style-type:upper-roman;" >
+			<li>To find a job </li>
+			<li>To take a lots of money </li>
+			<li>To move in an other city</li>
+		</ol>
+		
+		<!--Pour les listes de définition, mettre <dt> dvt la mot à definir et <dd> dvt la definition-->
+    		<dl>
+			<dt>Queso</dt>
+			<dd>Spanish word for cheese.</dd>
+			
+			<dt>Ordenador</dt>
+			<dd>Spanish word for Personal Computer</dd>
+		</dl>
+		
+		<!--types de formatage de texte-->
+		<p>Example of <b>Bold Text</b></p>
+		<p>Example of <em>Emphasized Text</em></p>
+		<p>Example of <strong>Strong Text</strong></p>
+		<p>Example of <i>Italic Text</i></p>
+		<p>Example of <sup>super-scripted Text</sup></p>
+		<p>Example of <sub>sub scripted Text</sub></p>
+		<p>Example of <del>struck-through Text</del></p>
+		<p>Example of <code>Computer Code Text</code></p>
+		
+		<!--font tag utilisé pour modifier l'affichage de text, pas très utilisé dans la pratique car on utilise css-->
+		<p><font size="5">This is font size 5</font></p>
+		<p>
+			<font color="#990000">This text is hexcolor #990000</font><br />
+			<font color="red">This text is red</font>
+		</p>
+		<p><font size="7" face="Georgia, Arial" color="maroon">C</font>ustomize your font to achieve a desired look.</p>
+		
+		<!--inclure un lien dans la page : 3 types de lien possibles : 
+			Internal - href="#anchorname"
+			Local - href="../img/foto.jpg"
+			Global - href="http://www.tutorialehtml.com/"
+		-->
+		<a href="http://www.tutorialehtml.com" target="_blank" title="HTML Tutorials">HTML Tutorials</a>
+		
+		<!--ajouter un symbole dans du texte-->
+		<p>In this phrase there had been introduced &nbsp;&nbsp;&nbsp;&nbsp; more spaces.<p>
+		
+		<p>
+			Less then- &lt; <br/> 
+			More then- &gt; <br />
+			Head tag - &lt;head&gt; 
+		</p>
+		
+		<!--créer un lien pour envoyer un mail avec destinataire, sujet et text pré-def-->
+		<a href="mailto:someone@example.com?subject=Questions&body=Write here if you have questions" title="" >Questions here</a>
+		
+		<!--Insérer une image à partir d'un url publique, alt est le texte à afficher si on accède pas l'image -->
+		<img alt="html image example" src="http://www.tutorialehtml.com/assets_tutorials/img/image.jpg"  />
+		<img alt="html image example" src="/assets_tutorials/img/image.jpg" />
+		<!--créer un lien avec une img, ici on se retrouve sur le site de href quand on clique sur l'image local-->
+		<a href="http://www.tutorialehtml.com/" title="HTML link image example">
+			<img alt="html image example" src="img/get_val.png" width="120" height="75" />
+		</a>
+		
+		<!--bouton formulaire texte envoie mail : 
+			création d'un input qui permet d'envoyer les informations par mail
+		-->
+		<form method="post" action="mailto:youremail@email.com">.
+
+			Name: <input type="text" size="10" maxlength="40" name="name" /><br />
+			Password: <input type="password" size="10" maxlength="10" name="password" /><br />
+			
+			<input type="submit" value="Send" />
+			
+		</form>
+		
+		<!--bouton formulaire envoie mail, sélection input à l'aide de bouton "radio" -->
+		<form method="post" action="mailto:youremail@email.com">
+			<p>What type of shoes you wear ?</p>
+			
+			<label>Color:</label> <br />
+			<input type="radio" name="color" value="dark" /> Dark <br />
+			<input type="radio" name="color" value="light" /> Light <br />
+			
+			<label>Size:</label> <br />
+			<input type="radio" name="size" value="small" /> Small <br />
+			<input type="radio" name="size" value="average" /> Average <br />
+			<input type="radio" name="size" value="big" /> Big <br />
+			
+			<input type="reset" value="Reset" />
+		</form>
+		
+		<!--bouton pour sélectionner un fichier local -->
+		<input type="hidden" name="MAX_FILE_SIZE" value="100" /> <input name="file" type="file" />
+		
+		<!-- création de table:
+			 tr :  ligne
+			 td : colonne
+			 th : ligne titre pour le tableau
+		-->
+		<table border="1"> 
+			<tr>
+				<th>Column 1</th> 
+				<th>Column 2</th>
+				<th>Column 3</th>
+			</tr>
+			<tr>
+				<td rowspan="2">Row 1 Cell 1</td> 
+				<td>Row 1 Cell 2</td>
+				<td>Row 1 Cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 2 Cell 2</td>
+				<td>Row 2 Cell 3</td>
+			</tr> 
+			<tr>
+				<td colspan="3">Row 3 Cell 1</td>
+			</tr>
+		</table>
+		
+		<form method="post" action="mailto:loubersacemma@yahoo.fr" >
+
+			Name:<input type="text" name="Name" size="15" maxlength="15" /><br />
+			
+			Last Name:<input type="text" name="Last_name" size="25" maxlength="25" /><br />
+			
+			<input type="submit" value="Send email" />
+
+		</form>
+		
+		<h2>This element has a static positioning</h2>
+
+		<h2 class="overlap_element">The title will be in upper position compared to the initial positioning</h2>
+
+		<p><strong>Note:</strong> You can see that the space that correspond to the original positioning will be preserved</p>
+		
+		<!--créer un retour à ligne ainsi qu'un ligne de séparation horizontale-->
+		<hr />
+		Emma LOUBERSAC
+	</body>
+</html>
