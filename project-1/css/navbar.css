@@ -2,23 +2,15 @@
 margin: 0;
 }
 
-.container {
-max-width: 960px;
-width: 100%;
-margin: 0 auto;
+header {
+background-color: #333;
+color: #fff;
 padding: 20px;
-box-sizing: border-box;
 }
 
 body {
 font-family: 'Merriweather', serif;
 line-height: 1.6;
-}
-
-header {
-background-color: #333;
-color: #fff;
-padding: 20px;
 }
 
 nav {
@@ -27,6 +19,20 @@ justify-content: space-between;
 align-items: center;
 margin: 0 auto;
 }
+
+nav a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.container {
+max-width: 960px;
+width: 100%;
+margin: 0 auto;
+padding: 20px;
+box-sizing: border-box;
+}
+
 
 .logo {
 font-size: 2em;
@@ -47,11 +53,12 @@ font-size: 1em;
 
 }
 
-.menu a {
+.menu a, .menu span {
 color: white;
 text-decoration: none;
 margin-right: 30px; 
 }
+
 
 .menu a:hover {
 color: #f0c040;
