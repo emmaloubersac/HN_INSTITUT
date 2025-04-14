@@ -1,0 +1,14 @@
+main img {
+    width: 800px;
+    height: 400px;
+    padding: 20px 150px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.vehicule-info {
+    text-align: center;
+    padding-bottom: 30px;
+}

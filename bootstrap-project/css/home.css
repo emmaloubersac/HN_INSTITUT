@@ -1,0 +1,19 @@
+h2 {
+  align-items: left;
+  text-decoration: underline;
+}
+
+.presentation #img {
+  width: 800px;
+  height: 400px;
+  padding: 20px 40px
+}
+
+.presentation #img-money {
+  width: 600px;
+  height: 400px;
+  padding: 20px 150px;
+}
+
+
+

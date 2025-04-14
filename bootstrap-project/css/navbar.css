@@ -1,0 +1,85 @@
+
+body {
+font-family: 'Merriweather', serif;
+}
+
+.container {
+max-width: 960px;
+width: 100%;
+margin: 0 auto;
+padding: 20px;
+box-sizing: border-box;
+}
+
+
+.logo {
+font-size: 2em;
+font-weight: bold;
+align-items: center;
+display: flex;
+
+}
+
+.logoImg {
+width:140px; 
+height:80px;
+}
+
+#menu {
+font-size: 1.25em;
+}
+
+#menu a, #menu span {
+color: white;
+margin-right: 30px; 
+}
+
+
+#menu a:hover {
+color: #f0c040;
+}
+
+.dropdown-content a:hover {
+    color:black !important;
+}
+
+.dropdown-content {
+display: none; 
+position: absolute;
+font-size: 0.75em;
+}
+
+.dropdown:hover .dropdown-content {
+display: block; 
+}
+
+main {
+padding: 60px 20px;
+max-width: 960px;
+margin: 0 auto;
+background-color: lightgray
+}
+
+h1 {
+text-align: center;
+padding-bottom: 30px;
+}
+
+
+h2 {
+    text-decoration: underline;
+}
+
+p {
+font-size: 1.2em;
+
+}
+
+.contact {
+font-size: 12px;
+text-align: center;
+}
+  
+  
+  
+  
